@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="188569f6-0a18-4e0d-8053-13d8cf11e3da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../3d全景图/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/girl1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/girl2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/girl3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/girl4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/grassland.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/leaf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/mushroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/img/spirit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b站头部动画/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clock时钟/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clock时钟/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../loading吃豆人/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../loading吃豆人/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../poster苹果海报/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../poster苹果海报/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rocket火箭/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rocket火箭/img/rocket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rocket火箭/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../snakeHover悬停蛇边界/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../snakeHover悬停蛇边界/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../switch开关/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../switch开关/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nDjQsEVvPkZtQhbB3irz1CYAgP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="188569f6-0a18-4e0d-8053-13d8cf11e3da" name="Default Changelist" comment="" />
+      <created>1610931542791</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610931542791</updated>
+      <workItem from="1610931543829" duration="549000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

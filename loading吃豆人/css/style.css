@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #282c34;
+}
+
+.loading{
+  position: relative;
+}
+/*嘴巴*/
+.loading > .pacman-up,
+.loading > .pacman-down{
+  width: 0;
+  height: 0;
+  border: 25px solid #ffcd42;
+  border-right: 25px solid transparent;
+  border-radius: 50%;
+}
+
+.loading > .pacman-up{
+  animation: rotate_pacman_up .5s infinite;
+}
+.loading > .pacman-down{
+  animation: rotate_pacman_down .5s infinite;
+  margin-top: -100%;
+}
+/*豆子*/
+.loading > .pacman-dot{
+  position: absolute;
+  background: #ffcd42;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 100px;
+  margin-top: -6px;
+}
+.loading > .pacman-dot:nth-child(3){
+  animation: pacman_dot 1s -1s infinite linear;
+}
+.loading > .pacman-dot:nth-child(4){
+  animation: pacman_dot 1s -.66s infinite linear;
+}
+.loading > .pacman-dot:nth-child(5){
+  animation: pacman_dot 1s -.33s infinite linear;
+}
+
+@keyframes pacman_dot {
+  50%{
+    opacity: .6;
+  }
+  100%{
+    transform: translate(-100px, 0);
+  }
+}
+
+@keyframes rotate_pacman_up {
+  0% {
+    transform: rotate(270deg);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotate_pacman_down {
+  0% {
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}

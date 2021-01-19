@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+label{
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  position: relative;
+  background: #b6b6b6;
+  overflow: hidden;
+}
+label input{
+  visibility: hidden;
+}
+label input::after{
+  visibility: visible;
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: white;
+  border-radius: 50%;
+  transition: all .2s;
+}
+label input:checked::after {
+  transform: translateX(50px);
+}
+label input::before{
+  visibility: visible;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all .2s;
+}
+label input:checked::before {
+  background: greenyellow;
+}

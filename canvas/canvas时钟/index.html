@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>canvas时钟</title>
+</head>
+<body>
+  <canvas id="canvas1" width="800" height="600"></canvas>
+  <script type="text/javascript">
+    let canvas1 = document.querySelector('#canvas1')
+    let ctx = canvas1.getContext("2d")
+
+    function renderClock() {
+      ctx.clearRect(0, 0, 800, 600)
+      ctx.save()
+      //将坐标移动到画布的中央
+      ctx.translate(400, 300)
+      ctx.rotate(- 2 * Math.PI / 4)
+      ctx.save()
+
+      //绘制表盘
+      ctx.beginPath()
+      ctx.arc(0, 0, 200, 0, 2 * Math.PI)
+      ctx.strokeStyle = "darkgrey"
+      ctx.lineWidth = 10
+      ctx.stroke()
+      ctx.closePath()
+
+      //绘制刻度
+      for (let i = 0; i < 60; i++) {
+        ctx.rotate(Math.PI / 30)
+        ctx.beginPath()
+        ctx.moveTo(180, 0)
+        ctx.lineTo(190, 0)
+        ctx.lineWidth = 2
+        ctx.strokeStyle = "orangered"
+        ctx.stroke()
+        ctx.closePath()
+      }
+      ctx.restore()
+      ctx.save()
+      for (let i = 0; i < 12; i++) {
+        ctx.rotate(Math.PI / 6)
+        ctx.beginPath()
+        ctx.moveTo(180, 0)
+        ctx.lineTo(200, 0)
+        ctx.lineWidth = 10
+        ctx.strokeStyle = "darkgrey"
+        ctx.stroke()
+        ctx.closePath()
+      }
+      ctx.restore()
+      ctx.save()
+
+      let time = new Date()
+      let hour = time.getHours()
+      let min = time.getMinutes()
+      let sec = time.getSeconds()
+      hour = hour > 12 ? hour - 12 : hour
+      console.log(`${hour}:${min}:${sec}`)
+
+      //绘制秒针
+      ctx.beginPath()
+      //根据秒针时间旋转
+      ctx.rotate(2 * Math.PI / 60 * sec )
+      ctx.moveTo(-30, 0)
+      ctx.lineTo(170, 0)
+      ctx.lineWidth = 2
+      ctx.strokeStyle = "red"
+      ctx.stroke()
+      ctx.closePath()
+      ctx.restore()
+      ctx.save()
+
+      //绘制分针
+      ctx.beginPath()
+      //根据分针时间旋转
+      ctx.rotate(2 * Math.PI / 60 * min + 2 * Math.PI / 3600 * sec)
+      ctx.moveTo(-20, 0)
+      ctx.lineTo(130, 0)
+      ctx.lineWidth = 4
+      ctx.strokeStyle = "darkblue"
+      ctx.stroke()
+      ctx.closePath()
+      ctx.restore()
+      ctx.save()
+
+      //绘制时针
+      ctx.beginPath()
+      //根据时针时间旋转
+      ctx.rotate(2 * Math.PI / 12 * hour + 2 * Math.PI / 60 / 12 * min + 2 * Math.PI / 60 / 60 / 12 * sec)
+      ctx.moveTo(-10, 0)
+      ctx.lineTo(100, 0)
+      ctx.lineWidth = 6
+      ctx.strokeStyle = "darkslategray"
+      ctx.stroke()
+      ctx.closePath()
+      ctx.restore()
+      ctx.save()
+
+      ctx.beginPath()
+      ctx.arc(0, 0, 10, 0, 2 * Math.PI)
+      ctx.fillStyle = 'darkgrey'
+      ctx.fill()
+      ctx.closePath()
+      ctx.restore()
+      ctx.restore()
+    }
+
+    renderClock()
+    setInterval(()=> {
+      renderClock()
+    },1000)
+
+  </script>
+</body>
+</html>

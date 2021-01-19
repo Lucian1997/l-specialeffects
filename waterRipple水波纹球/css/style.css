@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgb(90, 90, 250), rgb(3, 3, 110));
+}
+
+.container, .mave {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.container {
+  border: 3px solid darkturquoise;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.mave {
+  position: relative;
+  background-color: skyblue;
+}
+
+.mave::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  /*背景颜色*/
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 40%;
+  /*-50%向左移动父元素宽度的50%， -60%向上移动父元素高度的60%*/
+  transform: translate(-50%, -60%);
+  animation: mave 5s infinite;
+}
+
+.mave::after {
+  content: 'oceanball';
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  text-transform: uppercase;
+  color: darkturquoise;
+  font-weight: 700;
+  transform: translate(-50%, 0);
+}
+/*水波纹动画效果*/
+@keyframes mave {
+  100% {
+    /*360deg旋转度数*/
+    transform: translate(-50%, -60%) rotate(360deg);
+  }
+}

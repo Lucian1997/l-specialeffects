@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 375px;
+  background: url("../img/JOJO.jpeg");
+  /*背景图自适应*/
+  background-size: contain;
+  overflow: hidden;
+}
+
+.box::before {
+  /*伪元素做文字说明*/
+  content: 'Wryyyyyyyyyyyyyyyyyyyyyyy';
+  position: absolute;
+  top: -375px;
+  left: 0;
+  width: 600px;
+  height: 375px;
+  line-height: 375px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .2);
+}
+.box:hover::before{
+  top: 0;
+  animation: dropdown 2s;
+}
+@keyframes dropdown {
+  0%{
+    top: -375px;
+  }
+  5%{
+    top: 0;
+  }
+  10%{
+    top: -30px;
+  }
+  20%{
+    top: 0;
+  }
+  30%{
+    top: -20px;
+  }
+  40%{
+     top: 0;
+   }
+  50%{
+    top: -15px;
+  }
+  60%{
+     top: 0;
+   }
+  70%{
+    top: -10px;
+  }
+  80%{
+    top: 0;
+  }
+  90%{
+    top: -5px;
+  }
+  100%{
+    top: 0;
+  }
+}

@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.folder {
+  cursor: pointer;
+  background-color: #ffd485;
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.folder::before {
+  width: 55px;
+  height: 25px;
+  border-radius: 5px;
+  content: '';
+  background-color: #ffd485;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.folder::after {
+  display: block;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  content: '';
+  transform: skew(0deg);
+  background-color: #ffe1a8;
+  transition: all .2s;
+}
+
+.folder>.paper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  width: 190px;
+  height: 140px;
+  transition: all .2s;
+}
+
+.folder>.one {
+  background-color: #ffadad;
+}
+.folder>.two {
+  background-color: #ffd6a5;
+}
+.folder>.three {
+  background-color: #fdffb6;
+}
+.folder>.four {
+  background-color: #9bf6ff;
+}
+
+.folder:hover::after {
+  transform: skew(-15deg);
+  margin-left: 25px;
+}
+
+.folder:hover>.paper:nth-child(1) {
+  transform: rotate(10deg) translate(-80px, -80px);
+}
+.folder:hover>.paper:nth-child(2) {
+  transform: rotate(20deg) translate(-80px, -80px);
+}
+
+.folder:hover>.paper:nth-child(3) {
+  transform: rotate(30deg) translate(-80px, -80px);
+}
+
+.folder:hover>.paper:nth-child(4) {
+  transform: rotate(40deg) translate(-80px, -80px);
+}
+
+
