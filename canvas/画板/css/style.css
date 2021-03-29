@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+}
+.menu {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #ccc;
+  user-select: none;
+}
+#canvas {
+  flex: 1;
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+.btn,
+.btn1 {
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  color: #999;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 40px;
+}
+.btn:hover,
+.btn1:hover{
+  border: 1px solid #007bff;
+  color: black;
+  font-weight: 600;
+}
+.btn.active,
+.btn1.active {
+  box-shadow: 0 0 20px deepskyblue;
+  border: 1px solid deepskyblue;
+}
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small::after {
+  content: '';
+  background: #333;
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 50%;
+}
+.normal::after {
+  content: '';
+  background: #333;
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-radius: 50%;
+}
+.large::after {
+  content: '';
+  background: #333;
+  width: 32px;
+  height: 32px;
+  display: block;
+  border-radius: 50%;
+}

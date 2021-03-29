@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>canvas刮刮卡</title>
+  <style>
+    #ggk {
+      width: 400px;
+      height: 100px;
+      position: relative;
+    }
+    #ggk>.jp {
+      width: 400px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      user-select: none;
+    }
+    #canvas {
+      width: 400px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="ggk">
+    <div class="jp">谢谢惠顾</div>
+    <canvas id="canvas" width="400" height="100"></canvas>
+  </div>
+  <script type="text/javascript">
+    let canvas = document.querySelector('#canvas')
+    let ggkDom = document.querySelector('#ggk')
+    let jpDom = document.querySelector('.jp')
+    let ctx = canvas.getContext('2d')
+    ctx.fillStyle = "darkgrey"
+    ctx.fillRect(0, 0, 400, 100)
+    ctx.fillStyle = "#fff"
+    ctx.strokeStyle = '#fff'
+    ctx.font = '20px 微软雅黑'
+    ctx.strokeText('刮刮卡', 175, 55)
+
+    let isDraw = false
+    //设置isDraw = true，即为允许绘制
+    canvas.onmousedown = function () {
+      isDraw = true
+    }
+    //移动的时候绘制圆形，将源图像内的目标内容清除
+    canvas.onmousemove = function (e) {
+      if (isDraw) {
+        let x = e.pageX - ggkDom.offsetLeft
+        let y = e.pageY - ggkDom.offsetTop
+        ctx.globalCompositeOperation = "destination-out"
+        ctx.arc(x, y, 20, 0, 2 * Math.PI)
+        ctx.fill()
+      }
+    }
+    canvas.onmouseup = function () {
+      isDraw = false
+    }
+
+    let arr = [
+      {content: '一等奖：iphoneXs', p: 0.1},
+      {content: '二等奖：iPad', p: 0.2},
+      {content: '三等奖：娃娃一个', p: 0.3},
+      {content: '谢谢惠顾', p: 0.4}
+    ]
+    let randomNum = Math.random()
+    if (randomNum < arr[0].p) {
+      jpDom.innerHTML = arr[0].content
+    }else if (randomNum < arr[1].p + arr[0].p) {
+      jpDom.innerHTML = arr[1].content
+    }else if (randomNum < arr[2].p + arr[1].p + arr[0].p) {
+      jpDom.innerHTML = arr[2].content
+    }else {
+      jpDom.innerHTML = arr[3].content
+    }
+  </script>
+</body>
+</html>

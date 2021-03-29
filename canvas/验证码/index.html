@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>canvas验证码</title>
+</head>
+<body>
+<canvas id="canvas" width="135" height="40"></canvas>
+<script type="text/javascript">
+  function initVerificationCode(selector, width, height, callback) {
+    //随机数的生成函数
+    function randomNum(min, max) {
+      return parseInt(Math.random() * (max - min) + min)
+    }
+
+    //随机生成颜色的函数
+    function randomColor(min, max) {
+      let r = randomNum(min, max)
+      let g = randomNum(min, max)
+      let b = randomNum(min, max)
+      return `rgb(${r},${g},${b})`
+    }
+
+    let canvas = document.querySelector(selector)
+    let ctx = canvas.getContext("2d")
+    //在canvas上绘制背景颜色
+    ctx.fillStyle = randomColor(180, 230)
+    ctx.fillRect(0, 0, width, height)
+
+    //随机字符串
+    let pool = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789'
+    let code = ''
+    for (let i = 0; i < 4; i++) {
+      //随机的字符
+      let c = pool[randomNum(0, pool.length)]
+      code += c
+      //随机出字体大小
+      let fsz = randomNum(18, 40)
+      //随机字符的旋转角度
+      let deg = randomNum(-30, 30)
+      ctx.font = fsz + 'px Simhei'
+      ctx.textBaseline = 'top'
+      //设置字符的填充颜色
+      ctx.fillStyle = randomColor(80, 150)
+      ctx.save()
+      ctx.translate(30 * i + 15, 15)
+      ctx.rotate(deg * Math.PI / 180)
+      ctx.fillText(c, 0, -8)
+      ctx.restore()
+    }
+
+    //随机生成干扰线
+    for (let i = 0; i < 5; i++) {
+      ctx.beginPath()
+      ctx.moveTo(randomNum(0, width), randomNum(0, height))
+      ctx.lineTo(randomNum(0, width), randomNum(0, height))
+      ctx.strokeStyle = randomColor(180, 230)
+      ctx.closePath()
+      ctx.stroke()
+    }
+
+    //随机生成干扰点
+    for (let i = 0; i < 40; i++) {
+      ctx.beginPath()
+      ctx.arc(randomNum(0, width), randomNum(0, height), 1, 0, 2 * Math.PI)
+      ctx.closePath()
+      ctx.fillStyle = randomColor(15, 200)
+      ctx.fill()
+    }
+    callback(code)
+  }
+  initVerificationCode('#canvas', 135, 140, code => {
+    console.log(code);
+  })
+</script>
+</body>
+</html>

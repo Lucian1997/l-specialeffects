@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="btn-box">
+    <div class="box">
+      <span class="ripple"></span>
+      <p>鎏金</p>
+    </div>
+    <div class="box">
+      <span class="ripple"></span>
+      <p>魅红</p>
+    </div>
+    <div class="box">
+      <span class="ripple"></span>
+      <p>翠柳</p>
+    </div>
+    <div class="box">
+      <span class="ripple"></span>
+      <p>靛青</p>
+    </div>
+    <div class="box">
+      <span class="ripple"></span>
+      <p>惑紫</p>
+    </div>
+    <div class="box">
+      <span class="ripple"></span>
+      <p>霞彩</p>
+    </div>
+  </div>
+
+  <script>
+    let box = document.querySelectorAll(".box");
+    for (let i = 0; i < box.length; i++) {
+      box[i].onmouseenter = function (event) {
+        let ripple = box[i].querySelector(".ripple");
+        ripple.classList.add("animation");
+        ripple.style.width = this.offsetWidth + "px";
+        ripple.style.height = this.offsetWidth + "px";
+        ripple.style.top = -(this.offsetHeight - event.offsetY) + "px";
+        ripple.style.left = -(this.offsetWidth / 2 - event.offsetX) + "px";
+        setTimeout(function () {
+          ripple.classList.remove("animation");
+        }, 500)
+
+      }
+    }
+  </script>
+</body>
+</html>

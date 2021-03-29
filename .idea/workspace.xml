@@ -11,34 +11,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67e2b89-558f-4330-bd82-14d056207450" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/3d全景图/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/girl1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/girl2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/girl3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/girl4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/grassland.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/leaf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/mushroom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/img/spirit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b站头部动画/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/canvas时钟/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clock时钟/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clock时钟/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loading吃豆人/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loading吃豆人/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loading音轨波浪/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loading音轨波浪/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poster苹果海报/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poster苹果海报/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rocket火箭/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rocket火箭/img/rocket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rocket火箭/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snakeHover悬停蛇边界/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snakeHover悬停蛇边界/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/switch开关/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/switch开关/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0l-js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/波纹按钮/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/波纹按钮/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/社交按钮/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/线条边框按钮/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button按钮/线条边框按钮/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/刮刮卡/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/画板/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/画板/img/circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/画板/img/huabi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/画板/img/rect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/画板/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/验证码/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loading加载动画/三线旋转/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loading加载动画/三线旋转/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/二级导航栏/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/二级导航栏/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/伸缩式横向导航栏/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/伸缩式横向导航栏/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/img/nier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/全隐藏侧边导航栏/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/img/nier.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/半隐藏侧边导航栏/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/自适应导航栏/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navbar导航栏/自适应导航栏/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/icons/模拟器.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/img/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/jq/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/时钟博客首页/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutters手风琴/垂直手风琴（文字）/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/CSS3DRenderer.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/negx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/negy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/negz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/posx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/posy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/posz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/assets/three.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d全景图/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buttonStreamer流光按钮/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buttonStreamer流光按钮/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas/canvas时钟/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/时钟/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading吃豆人/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading吃豆人/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading音轨波浪/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading音轨波浪/.idea/loading加载动画.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading音轨波浪/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading音轨波浪/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading音轨波浪/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading音轨波浪/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loading音轨波浪/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shutters手风琴/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shutters手风琴/img/autumn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shutters手风琴/img/seasons.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shutters手风琴/img/spring.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shutters手风琴/img/summer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shutters手风琴/img/winter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shutters手风琴/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +122,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -71,13 +146,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JetBrains\WebstormProjects\l-specialeffects\b站头部动画\img" />
-      <recent name="D:\JetBrains\WebstormProjects\l-specialeffects\blurBox毛玻璃\img" />
-      <recent name="D:\JetBrains\WebstormProjects\l-specialeffects\rocket火箭\img" />
+      <recent name="D:\JetBrains\WebstormProjects\l-specialeffects\navbar导航栏\罗盘导航" />
+      <recent name="D:\JetBrains\WebstormProjects\l-specialeffects\parallaxScroll视差滚动\时钟博客首页" />
+      <recent name="D:\JetBrains\WebstormProjects\l-specialeffects\parallaxScroll视差滚动\时钟博客首页\img" />
+      <recent name="D:\JetBrains\WebstormProjects\l-specialeffects\parallaxScroll视差滚动\awesome视差" />
+      <recent name="D:\JetBrains\WebstormProjects\l-specialeffects\parallaxScroll视差滚动\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -102,6 +180,26 @@
       <workItem from="1610585226466" duration="15149000" />
       <workItem from="1610671224436" duration="13000" />
       <workItem from="1611042506245" duration="68000" />
+      <workItem from="1611042748090" duration="283000" />
+      <workItem from="1611049294235" duration="666000" />
+      <workItem from="1611102747951" duration="395000" />
+      <workItem from="1611130095852" duration="53000" />
+      <workItem from="1611130318901" duration="221000" />
+      <workItem from="1611131053559" duration="3630000" />
+      <workItem from="1611709458461" duration="41000" />
+      <workItem from="1611709717786" duration="12516000" />
+      <workItem from="1611728105262" duration="3654000" />
+      <workItem from="1611737536608" duration="1427000" />
+      <workItem from="1611794530810" duration="1056000" />
+      <workItem from="1612141711342" duration="21315000" />
+      <workItem from="1612225745253" duration="1350000" />
+      <workItem from="1612251080620" duration="99000" />
+      <workItem from="1612256424308" duration="10000" />
+      <workItem from="1612691128697" duration="306000" />
+      <workItem from="1613615941440" duration="2065000" />
+      <workItem from="1613805102607" duration="1490000" />
+      <workItem from="1615952796969" duration="29000" />
+      <workItem from="1615952979193" duration="818000" />
     </task>
     <servers />
   </component>
@@ -121,13 +219,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1610671234684">
+    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1613617492683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610671234684" />
-    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1610613640434">
+    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613617492683" />
+    <state x="922" y="164" key="SettingsEditor" timestamp="1611715441597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610613640434" />
+    <state x="922" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611715441597" />
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1612143473095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612143473095" />
   </component>
 </project>

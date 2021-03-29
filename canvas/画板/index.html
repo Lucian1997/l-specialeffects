@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>canvas画板</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+画笔功能：能够拖动鼠标在页面内绘图，设置画笔粗细，设置画笔颜色
+绘制圆形：拖动鼠标即可随意绘制圆形
+绘制矩形：拖动鼠标即可随意绘制矩形
+-->
+<div class="menu">
+  <div id="huabi" class="btn" style="background-image:url('img/huabi.png');"></div>
+  <div id="rect" class="btn" style="background-image:url('img/rect.png');"></div>
+  <div id="circle" class="btn" style="background-image:url('img/circle.png');"></div>
+  <div id="eraser" class="btn">橡皮檫</div>
+  <div class="btn1 line small active"></div>
+  <div class="btn1 line normal"></div>
+  <div class="btn1 line large"></div>
+  <div class="btn"><input type="color" id="color"></div>
+  <div id="download" class="btn">下载图片</div>
+  <a id="d" href="" download="canvas_image" hidden>下载</a>
+  <div id="back" class="btn">撤销</div>
+  <div id="clear" class="btn">清空</div>
+</div>
+<canvas id="canvas"></canvas>
+<script>
+  let allBtn = document.querySelectorAll('.btn')
+  let canvas = document.querySelector('#canvas')
+  let ctx = canvas.getContext('2d')
+  //设置高宽
+  console.log([canvas]);
+  canvas.setAttribute("width", canvas.offsetWidth)
+  canvas.setAttribute("height", canvas.offsetHeight)
+  let huaban = {
+    type: 'none',
+    isDraw: false,
+    beginX: 0,
+    beginY: 0,
+    lineWidth: 6,
+    color: "#000",
+    history: [],
+    huabiFn: function (e) {
+      let x = e.pageX - canvas.offsetLeft
+      let y = e.pageY - canvas.offsetTop
+      ctx.lineTo(x, y)
+      ctx.lineCap = "round"
+      ctx.lineJoin = "round"
+      ctx.stroke()
+
+    },
+    rectFn: function (e) {
+      let x = e.pageX - canvas.offsetLeft
+      let y = e.pageY - canvas.offsetTop
+      ctx.clearRect(0, 0, canvas.offsetWidth, canvas.offsetHeight)
+      if (huaban.history.length > 0)
+        ctx.putImageData(huaban.history[huaban.history.length - 1], 0, 0, 0, 0, canvas.offsetWidth, canvas.offsetHeight)
+      ctx.beginPath()
+      ctx.lineCap = "butt"
+      ctx.lineJoin = "miter"
+      ctx.rect(huaban.beginX, huaban.beginY, x - huaban.beginX, y - huaban.beginY)
+      ctx.stroke()
+      ctx.closePath()
+    },
+    circleFn: function (e) {
+      let x = e.pageX - canvas.offsetLeft
+      let y = e.pageY - canvas.offsetTop
+      ctx.clearRect(0, 0, canvas.offsetWidth, canvas.offsetHeight)
+      if (huaban.history.length > 0)
+        ctx.putImageData(huaban.history[huaban.history.length - 1], 0, 0, 0, 0, canvas.offsetWidth, canvas.offsetHeight)
+      ctx.beginPath()
+      ctx.ellipse((huaban.beginX + x) / 2, (huaban.beginY + y) / 2, Math.abs(x - huaban.beginX), Math.abs(y - huaban.beginY), 0, 0, 2 * Math.PI)
+      ctx.stroke()
+      ctx.closePath()
+    },
+    eraserFn: function (e) {
+      let x = e.pageX - canvas.offsetLeft
+      let y = e.pageY - canvas.offsetTop
+      ctx.globalCompositeOperation = "destination-out"
+      ctx.lineTo(x, y)
+      ctx.lineCap = "round"
+      ctx.lineJoin = "round"
+      ctx.stroke()
+    }
+  }
+
+  //画笔
+  let huabiBtn = document.querySelector('#huabi')
+  huabiBtn.onclick = function () {
+    initBtn()
+    huabiBtn.classList.add("active")
+    huaban.type = 'huabi'
+    huaban.isDraw = false
+  }
+
+  //矩形
+  let rectBtn = document.querySelector('#rect')
+  rectBtn.onclick = function () {
+    initBtn()
+    rectBtn.classList.add("active")
+    huaban.type = 'rect'
+    huaban.isDraw = false
+  }
+
+  //圆形
+  let circleBtn = document.querySelector('#circle')
+  circleBtn.onclick = function () {
+    initBtn()
+    circleBtn.classList.add("active")
+    huaban.type = 'circle'
+    huaban.isDraw = false
+  }
+  //橡皮擦
+  let eraserBtn = document.querySelector('#eraser')
+  eraserBtn.onclick = function () {
+    initBtn()
+    eraserBtn.classList.add("active")
+    huaban.type = 'eraser'
+    huaban.isDraw = false
+  }
+
+  //撤销
+  let backBtn = document.querySelector('#back')
+  backBtn.onclick = function () {
+    ctx.clearRect(0, 0, canvas.offsetWidth, canvas.offsetHeight)
+    ctx.restore()
+    huaban.history.pop()
+    if (huaban.history.length > 0) {
+      ctx.putImageData(huaban.history[huaban.history.length - 1], 0, 0, 0, 0, canvas.offsetWidth, canvas.offsetHeight)
+    }
+    huaban.isDraw = false
+  }
+
+  //清空
+  let clearBtn = document.querySelector('#clear')
+  clearBtn.onclick = function () {
+    ctx.clearRect(0, 0, canvas.offsetWidth, canvas.offsetHeight)
+    huaban.history.length = 0
+    initBtn()
+    huaban.type = 'none'
+    huaban.isDraw = false
+  }
+
+  //设置粗细的按钮
+  let lineDiv = document.querySelectorAll('.line')
+  lineDiv.forEach((item, index) => {
+    item.onclick = function () {
+      lineDiv.forEach(item => {
+        item.classList.remove("active")
+      })
+      item.classList.add('active')
+      if (index === 0) {
+        huaban.lineWidth = 6
+      } else if (index === 1) {
+        huaban.lineWidth = 16
+      } else {
+        huaban.lineWidth = 32
+      }
+    }
+  })
+
+  //监听颜色设置变化事件
+  let colorInput = document.querySelector('#color')
+  colorInput.onchange = function (e) {
+    huaban.color = colorInput.value
+  }
+
+  //下载
+  let downloadBtn = document.querySelector('#download')
+  downloadBtn.onclick = function () {
+    let url = canvas.toDataURL()
+    let aDom = document.querySelector('#d')
+    aDom.setAttribute('href', url)
+    aDom.setAttribute('download', new Date().toLocaleString())
+    aDom.click()
+  }
+
+  //监听鼠标按下事件
+  canvas.onmousedown = function (e) {
+    huaban.isDraw = true
+    ctx.strokeStyle = huaban.color
+    ctx.lineWidth = huaban.lineWidth
+    huaban.beginX = e.pageX - canvas.offsetLeft
+    huaban.beginY = e.pageY - canvas.offsetTop
+    if (huaban.type == 'huabi' || huaban.type == 'eraser') {
+      ctx.beginPath()
+      ctx.moveTo(huaban.beginX, huaban.beginY)
+    }
+  }
+  //监听鼠标抬起事件
+  canvas.onmouseup = function () {
+    huaban.history.push(ctx.getImageData(0, 0, canvas.offsetWidth, canvas.offsetHeight))
+    huaban.isDraw = false
+    if (huaban.type === 'huabi') {
+      ctx.closePath()
+    }
+    if (huaban.type === 'eraser') {
+      ctx.closePath()
+      ctx.globalCompositeOperation = "source-over"
+    }
+  }
+
+  canvas.onmousemove = function (e) {
+    if (huaban.isDraw && huaban.type != 'none') {
+      huaban[huaban.type + 'Fn'](e)
+    }
+  }
+
+  function initBtn() {
+    allBtn.forEach(function (item) {
+      item.classList.remove("active")
+    })
+  }
+
+</script>
+</body>
+</html>
