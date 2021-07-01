@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>液体切换</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="imgBox">
+      <img src="img/balloon.jpg" alt="">
+      <img src="img/balloon2.jpg" alt="">
+    </div>
+    <div class="imgBox">
+      <img src="img/ice.jpg" alt="">
+      <img src="img/ice2.jpg" alt="">
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+  <script src="js/hover-effect.umd.js"></script>
+  <script type="text/javascript">
+    Array.from(document.querySelectorAll('.imgBox')).forEach(e => {
+      const imgs = Array.from(e.querySelectorAll('img'))
+      new hoverEffect({
+        parent: e,
+        intensity: 0.3,
+        image1: imgs[0].getAttribute('src'),
+        image2: imgs[1].getAttribute('src'),
+        displacementImage: 'displacement/6.jpg'
+      })
+    })
+  </script>
+</body>
+</html>

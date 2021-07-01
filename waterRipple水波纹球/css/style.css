@@ -40,7 +40,7 @@ body {
   border-radius: 40%;
   /*-50%向左移动父元素宽度的50%， -60%向上移动父元素高度的60%*/
   transform: translate(-50%, -60%);
-  animation: mave 5s infinite;
+  animation: mave 5s infinite linear;
 }
 
 .mave::after {
