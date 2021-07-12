@@ -11,43 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67e2b89-558f-4330-bd82-14d056207450" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/displacement/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/img/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/img/balloon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/img/balloon2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/img/ice.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/img/ice2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/js/hover-effect.umd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiquidSwitching液体切换/js/hover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MouseMove鼠标移动/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MouseMove鼠标移动/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/button按钮/3D分层悬停/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/button按钮/3D分层悬停/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/awesome视差/css/jarallax.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/awesome视差/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/awesome视差/img/nier.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/awesome视差/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/awesome视差/js/jarallax-element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallaxScroll视差滚动/awesome视差/js/jarallax.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waterRipple水波纹球/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/waterRipple水波纹球/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiquidSwitching液体切换/img/10.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +43,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/LiquidSwitching液体切换" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
@@ -144,7 +109,8 @@
       <workItem from="1624957585019" duration="1249000" />
       <workItem from="1625013317472" duration="13400000" />
       <workItem from="1625042833685" duration="1912000" />
-      <workItem from="1625100472379" duration="12588000" />
+      <workItem from="1625100472379" duration="13597000" />
+      <workItem from="1625186149023" duration="1544000" />
     </task>
     <servers />
   </component>
@@ -164,13 +130,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1620434115003">
+    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1625188345275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1620434115003" />
-    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1612143473095">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612143473095" />
+    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1625188345275" />
   </component>
 </project>

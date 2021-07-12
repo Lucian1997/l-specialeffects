@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="js/echarts.js"></script>
+</head>
+<body>
+  <!--容器-->
+  <div id="demo1" style="width: 1000px; height: 800px;margin: 0 auto"></div>
+
+  <script>
+    //初始化echarts实例
+    let myChart = echarts.init(document.querySelector('#demo1'))
+    //初始化数据
+    let data = []
+    let now = new Date(2020,3,1)
+    let oneDay = 24 * 3600 * 1000
+    let value = Math.random() * 1000
+    for (let i = 0; i < 20; i++) {
+      now = new Date(now.getTime() + oneDay)
+      value = value + Math.random() * 21
+      data.push({
+        name: now.toString(),
+        value: [
+          [now.getFullYear(), now.getMonth() + 1, now.getDate()].join('-'),
+          Math.round(value)
+        ]
+      })
+    }
+    console.log(data)
+    //指定图表的绘制
+    let options = {
+      //标题
+      title: {
+        text: '股票走势'
+      },
+      //鼠标悬停提示
+      tooltip: {
+        //触发类型
+        trigger: 'axis',
+        formatter(params) {
+          return `时间：${params[0].data.value[0]} - 股票价格：${params[0].data.value[1]}`
+        },
+        axisPointer: {
+          //动画
+          animation: true
+        }
+      },
+      //x轴
+      xAxis: {
+        //时间类型,category,value,log,time
+        type: 'time',
+        //网格
+        splitLine: {
+          show: true
+        },
+      },
+      //y轴
+      yAxis: {
+        type: 'value',
+        splitLine: {
+          show: false
+        },
+        //坐标轴留白
+        boundaryGap: [0, '100%']
+      },
+      series: [{
+        name: '股票数据',
+        type: 'line',
+        data: data
+      }]
+    }
+    //对实例对象设置配置
+    myChart.setOption(options)
+
+    setInterval(() => {
+      now = new Date(now.getTime() + oneDay)
+      value = value + Math.random() * 21
+      data.shift()
+
+      data.push({
+        name: now.toString(),
+        value: [
+          [now.getFullYear(), now.getMonth() + 1, now.getDate()].join('-'),
+          Math.round(value)
+        ]
+      })
+      myChart.setOption({
+        series: [{
+          data: data
+        }]
+      })
+    },1000)
+  </script>
+</body>
+</html>
